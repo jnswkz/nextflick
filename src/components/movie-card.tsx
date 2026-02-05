@@ -24,7 +24,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
           />
         </CardContent>
       </Link>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 flex flex-col justify-end p-4 transform-gpu translate-y-4 group-hover:translate-y-0">
         <h3 className="font-bold text-lg text-primary-foreground">{movie.title}</h3>
         <p className="text-sm text-primary-foreground/80">{movie.genres.join(", ")}</p>
         <div className="flex items-center gap-2 mt-2">
@@ -32,7 +32,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
             <span className="text-primary-foreground font-bold">{movie.rating}</span>
         </div>
       </div>
-      <div className="absolute top-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute top-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 transform-gpu translate-x-4 group-hover:translate-x-0">
         <WatchlistButton movie={movie} />
       </div>
     </Card>
