@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "movie-poster-1",
+      "description": "Movie poster for 'Cosmic Odyssey'",
+      "imageUrl": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFjZSUyMHN0YXJzfGVufDB8fHx8MTc3MDIyMDE0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space stars"
+    },
+    {
+      "id": "movie-poster-2",
+      "description": "Movie poster for 'Neon Blade'",
+      "imageUrl": "https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzcwMjU0MzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city night"
+    },
+    {
+      "id": "movie-poster-3",
+      "description": "Movie poster for 'The Last Stand'",
+      "imageUrl": "https://images.unsplash.com/photo-1650397306022-097627d330d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2VzdGVybiUyMGRlc2VydHxlbnwwfHx8fDE3NzAzMDY0MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "western desert"
+    },
+    {
+      "id": "movie-poster-4",
+      "description": "Movie poster for 'Echoes of Time'",
+      "imageUrl": "https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYW50YXN5JTIwZm9yZXN0fGVufDB8fHx8MTc3MDI5MDIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy forest"
+    },
+    {
+      "id": "movie-poster-5",
+      "description": "Movie poster for 'Deep Dive'",
+      "imageUrl": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1bmRlcndhdGVyJTIwb2NlYW58ZW58MHx8fHwxNzcwMjg0OTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "underwater ocean"
+    },
+    {
+      "id": "movie-poster-6",
+      "description": "Movie poster for 'The Silent City'",
+      "imageUrl": "https://images.unsplash.com/photo-1705861865195-52c6d2a1fe90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZHlzdG9waWFuJTIwY2l0eXxlbnwwfHx8fDE3NzAzMDM2MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dystopian city"
+    },
+    {
+      "id": "movie-poster-7",
+      "description": "Movie poster for 'Crimson Peak'",
+      "imageUrl": "https://images.unsplash.com/photo-1667348272111-995a15dddc12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnb3RoaWMlMjBob3Jyb3J8ZW58MHx8fHwxNzcwMzA2NDA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gothic horror"
+    },
+    {
+      "id": "movie-poster-8",
+      "description": "Movie poster for 'Solar Flare'",
+      "imageUrl": "https://images.unsplash.com/photo-1656538576466-eab5e63478f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY2ktZmklMjBzcGFjZXNoaXB8ZW58MHx8fHwxNzcwMjI3MTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sci-fi spaceship"
+    },
+    {
+      "id": "movie-poster-9",
+      "description": "Movie poster for 'The Alchemist'",
+      "imageUrl": "https://images.unsplash.com/photo-1657265514497-02611707af59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxteXN0ZXJ5JTIwb2xkfGVufDB8fHx8MTc3MDMwNjQwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mystery old"
+    },
+    {
+      "id": "movie-poster-10",
+      "description": "Movie poster for 'Heartstrings'",
+      "imageUrl": "https://images.unsplash.com/photo-1604851219446-f62397c2c7e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb21hbmNlJTIwY291cGxlfGVufDB8fHx8MTc3MDMwNjQwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "romance couple"
+    },
+    {
+      "id": "movie-poster-11",
+      "description": "Movie poster for 'Jungle Beat'",
+      "imageUrl": "https://images.unsplash.com/photo-1699694927257-89ac5ce509a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhZHZlbnR1cmUlMjBqdW5nbGV8ZW58MHx8fHwxNzcwMzA0MTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adventure jungle"
+    },
+    {
+      "id": "movie-poster-12",
+      "description": "Movie poster for 'Cyber War'",
+      "imageUrl": "https://images.unsplash.com/photo-1622835127981-749156c1a0f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjeWJlcnB1bmslMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc3MDMwNjQwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk technology"
+    }
+  ]
 }
