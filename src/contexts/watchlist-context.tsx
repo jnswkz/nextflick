@@ -45,10 +45,12 @@ export const WatchlistProvider = ({ children }: { children: ReactNode }) => {
       if (prev.find((item) => item.id === movie.id)) {
         return prev;
       }
-      toast({
-        title: "Added to Watchlist",
-        description: `${movie.title} has been added to your watchlist.`,
-      });
+      setTimeout(() => {
+        toast({
+          title: "Added to Watchlist",
+          description: `${movie.title} has been added to your watchlist.`,
+        });
+      }, 0);
       return [movie, ...prev];
     });
   }, [toast]);
@@ -57,10 +59,12 @@ export const WatchlistProvider = ({ children }: { children: ReactNode }) => {
     setWatchlist((prev) => {
       const movieToRemove = prev.find(m => m.id === movieId);
       if (movieToRemove) {
-        toast({
-          title: "Removed from Watchlist",
-          description: `${movieToRemove.title} has been removed from your watchlist.`,
-        });
+        setTimeout(() => {
+          toast({
+            title: "Removed from Watchlist",
+            description: `${movieToRemove.title} has been removed from your watchlist.`,
+          });
+        }, 0);
       }
       return prev.filter((item) => item.id !== movieId);
     });
