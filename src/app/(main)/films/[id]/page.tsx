@@ -1,4 +1,4 @@
-import { getMovieById } from "@/lib/movies";
+import { getMovieById } from "@/lib/server/film-store";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +12,7 @@ function VideoPlayer({ src }: { src: string }) {
         src={src}
         controls
         className="w-full h-full"
-        poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" // transparent 1x1 pixel
+        poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
       >
         Your browser does not support the video tag.
       </video>
@@ -20,8 +20,11 @@ function VideoPlayer({ src }: { src: string }) {
   );
 }
 
-export default function FilmDetailPage({ params }: { params: { id: string } }) {
-  const movie = getMovieById(params.id);
+export default async function FilmDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const movie = await getMovieById(id);
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
+  const streamUrl = `${backendUrl}/api/stream/${encodeURIComponent(movie?.id || "")}`;
 
   if (!movie) {
     notFound();
@@ -84,7 +87,7 @@ export default function FilmDetailPage({ params }: { params: { id: string } }) {
              <FilmDetailActions movie={movie} />
           </div>
 
-          <VideoPlayer src={movie.videoUrl} />
+          <VideoPlayer src={streamUrl} />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getMovies } from "@/lib/movies";
+import { listMovies } from "@/lib/server/film-store";
 import MovieCard from "@/components/movie-card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -13,8 +13,8 @@ import Link from "next/link";
 import { PlayCircle } from "lucide-react";
 import FilmDetailActions from "@/components/film-detail-actions";
 
-export default function HomePage() {
-  const allMovies = getMovies();
+export default async function HomePage() {
+  const allMovies = await listMovies();
   const newReleases = [...allMovies].sort((a, b) => b.releaseYear - a.releaseYear).slice(0, 10);
   const topRated = [...allMovies].sort((a, b) => b.rating - a.rating).slice(0, 10);
   const featuredMovie = allMovies.find(m => m.featured) || allMovies[0];
